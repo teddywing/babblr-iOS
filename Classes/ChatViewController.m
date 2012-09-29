@@ -40,7 +40,7 @@
     self.view.backgroundColor = [UIColor colorWithRed:219.0f/255.0f green:226.0f/255.0f blue:237.0f/255.0f alpha:1];
 	
 	chatTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-	dataSource = [[ChatMessagesDataSource alloc] init];
+	dataSource = [[ChatMessagesDataSource alloc] initWithTableView:chatTableView];
 	[dataSource startMyWebSocket];
 	[chatTableView setDataSource:dataSource];
 	[self.view addSubview:chatTableView];

@@ -12,14 +12,16 @@
 
 @interface ChatMessagesDataSource : NSObject <UITableViewDataSource, WebSocketDelegate> {
 	NSMutableArray *messages;
+	UITableView *chatTableView;
 	@private
 		WebSocket *ws;
 }
 
 @property (nonatomic, retain) NSMutableArray *messages;
+@property (nonatomic, retain) UITableView *chatTableView;
 @property (nonatomic, readonly) WebSocket *ws;
 
+- (id)initWithTableView:(UITableView *)tableView;
 - (void)startMyWebSocket;
-- (void)sendMessage:(NSString *)message;
 
 @end

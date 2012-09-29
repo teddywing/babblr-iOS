@@ -7,12 +7,14 @@
 //
 
 #import "ChatMessagesDataSource.h"
+#import "ChatViewController.h"
 
 
 @implementation ChatMessagesDataSource
 
 @synthesize ws;
 @synthesize messages;
+@synthesize chatTableView;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	return [messages count];
@@ -25,7 +27,7 @@
 	if (cell == nil) {
 		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
 	}
-	 
+	
 	// Set up the cell...
 	NSString *cellValue = [messages objectAtIndex:[indexPath row]];
 	cell.textLabel.text = cellValue;
@@ -51,7 +53,7 @@
 
 #pragma mark Lifecycle
 
-- (id)init
+- (id)initWithTableView:(UITableView *)tableView
 {
     self = [super init];
     if (self) 
@@ -66,6 +68,7 @@
         ws = [[WebSocket webSocketWithConfig:config delegate:self] retain];
 		
 		messages = [[NSMutableArray alloc] init];
+		chatTableView = tableView;
     }
     return self;
     
@@ -114,6 +117,7 @@
 //    NSLog(@"Did receive message: %@", aMessage);
 	
 	[messages addObject:aMessage];
+	[chatTableView reloadData];
 	NSLog(@"TABLE DATA: %@", [messages description]);
 }
 
