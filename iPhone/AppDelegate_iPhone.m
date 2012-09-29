@@ -8,6 +8,7 @@
 
 #import "AppDelegate_iPhone.h"
 #import "RootViewController.h"
+#import "ChatViewController.h"
 
 @implementation AppDelegate_iPhone
 
@@ -21,7 +22,9 @@
 	
     // Override point for customization after application launch.
 	RootViewController *rootVC = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
-	[window setRootViewController:rootVC];
+	ChatViewController *chatVC = [[ChatViewController alloc] init];
+//	[window setRootViewController:rootVC];
+	[window addSubview:chatVC.view];
 	
     [window makeKeyAndVisible];
 	

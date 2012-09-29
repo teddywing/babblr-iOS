@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface RootViewController : UIViewController {
+@interface RootViewController : UIViewController <UIWebViewDelegate> {
 	IBOutlet UIWebView *webView;
 }
 

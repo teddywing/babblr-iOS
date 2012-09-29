@@ -17,6 +17,18 @@
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		D134D6E51617685C0098794B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D134D6E31617685C0098794B /* RootViewController.m */; };
 		D134D6E61617685C0098794B /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D134D6E41617685C0098794B /* RootViewController.xib */; };
+		D134D777161778790098794B /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D134D775161778790098794B /* ChatViewController.m */; };
+		D134D778161778790098794B /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D134D776161778790098794B /* ChatViewController.xib */; };
+		D134D7D4161780390098794B /* HPGrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D134D7D1161780390098794B /* HPGrowingTextView.m */; };
+		D134D7D5161780390098794B /* HPTextViewInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = D134D7D3161780390098794B /* HPTextViewInternal.m */; };
+		D134D806161781F50098794B /* MessageEntryBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D134D7FE161781F50098794B /* MessageEntryBackground.png */; };
+		D134D807161781F50098794B /* MessageEntryBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D134D7FF161781F50098794B /* MessageEntryBackground@2x.png */; };
+		D134D808161781F50098794B /* MessageEntryInputField.png in Resources */ = {isa = PBXBuildFile; fileRef = D134D800161781F50098794B /* MessageEntryInputField.png */; };
+		D134D809161781F50098794B /* MessageEntryInputField@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D134D801161781F50098794B /* MessageEntryInputField@2x.png */; };
+		D134D80A161781F50098794B /* MessageEntrySendButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D134D802161781F50098794B /* MessageEntrySendButton.png */; };
+		D134D80B161781F50098794B /* MessageEntrySendButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D134D803161781F50098794B /* MessageEntrySendButton@2x.png */; };
+		D134D80C161781F50098794B /* MessageEntrySendButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D134D804161781F50098794B /* MessageEntrySendButtonPressed.png */; };
+		D134D80D161781F50098794B /* MessageEntrySendButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D134D805161781F50098794B /* MessageEntrySendButtonPressed@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +48,21 @@
 		D134D6E21617685C0098794B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = Classes/RootViewController.h; sourceTree = "<group>"; };
 		D134D6E31617685C0098794B /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = Classes/RootViewController.m; sourceTree = "<group>"; };
 		D134D6E41617685C0098794B /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RootViewController.xib; path = Classes/RootViewController.xib; sourceTree = "<group>"; };
+		D134D774161778790098794B /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatViewController.h; path = Classes/ChatViewController.h; sourceTree = "<group>"; };
+		D134D775161778790098794B /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatViewController.m; path = Classes/ChatViewController.m; sourceTree = "<group>"; };
+		D134D776161778790098794B /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ChatViewController.xib; path = Classes/ChatViewController.xib; sourceTree = "<group>"; };
+		D134D7D0161780390098794B /* HPGrowingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPGrowingTextView.h; path = Vendor/HPGrowingTextView.h; sourceTree = "<group>"; };
+		D134D7D1161780390098794B /* HPGrowingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPGrowingTextView.m; path = Vendor/HPGrowingTextView.m; sourceTree = "<group>"; };
+		D134D7D2161780390098794B /* HPTextViewInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPTextViewInternal.h; path = Vendor/HPTextViewInternal.h; sourceTree = "<group>"; };
+		D134D7D3161780390098794B /* HPTextViewInternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPTextViewInternal.m; path = Vendor/HPTextViewInternal.m; sourceTree = "<group>"; };
+		D134D7FE161781F50098794B /* MessageEntryBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MessageEntryBackground.png; sourceTree = "<group>"; };
+		D134D7FF161781F50098794B /* MessageEntryBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageEntryBackground@2x.png"; sourceTree = "<group>"; };
+		D134D800161781F50098794B /* MessageEntryInputField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MessageEntryInputField.png; sourceTree = "<group>"; };
+		D134D801161781F50098794B /* MessageEntryInputField@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageEntryInputField@2x.png"; sourceTree = "<group>"; };
+		D134D802161781F50098794B /* MessageEntrySendButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MessageEntrySendButton.png; sourceTree = "<group>"; };
+		D134D803161781F50098794B /* MessageEntrySendButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageEntrySendButton@2x.png"; sourceTree = "<group>"; };
+		D134D804161781F50098794B /* MessageEntrySendButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MessageEntrySendButtonPressed.png; sourceTree = "<group>"; };
+		D134D805161781F50098794B /* MessageEntrySendButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageEntrySendButtonPressed@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +126,7 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				D134D6E91617687A0098794B /* xib */,
+				D134D7FD161781F50098794B /* Resources */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -125,8 +153,11 @@
 		D134D6E8161768700098794B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D134D774161778790098794B /* ChatViewController.h */,
+				D134D775161778790098794B /* ChatViewController.m */,
 				D134D6E21617685C0098794B /* RootViewController.h */,
 				D134D6E31617685C0098794B /* RootViewController.m */,
+				D134D7D61617803D0098794B /* Vendor */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -134,9 +165,36 @@
 		D134D6E91617687A0098794B /* xib */ = {
 			isa = PBXGroup;
 			children = (
+				D134D776161778790098794B /* ChatViewController.xib */,
 				D134D6E41617685C0098794B /* RootViewController.xib */,
 			);
 			name = xib;
+			sourceTree = "<group>";
+		};
+		D134D7D61617803D0098794B /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				D134D7D0161780390098794B /* HPGrowingTextView.h */,
+				D134D7D1161780390098794B /* HPGrowingTextView.m */,
+				D134D7D2161780390098794B /* HPTextViewInternal.h */,
+				D134D7D3161780390098794B /* HPTextViewInternal.m */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		D134D7FD161781F50098794B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D134D7FE161781F50098794B /* MessageEntryBackground.png */,
+				D134D7FF161781F50098794B /* MessageEntryBackground@2x.png */,
+				D134D800161781F50098794B /* MessageEntryInputField.png */,
+				D134D801161781F50098794B /* MessageEntryInputField@2x.png */,
+				D134D802161781F50098794B /* MessageEntrySendButton.png */,
+				D134D803161781F50098794B /* MessageEntrySendButton@2x.png */,
+				D134D804161781F50098794B /* MessageEntrySendButtonPressed.png */,
+				D134D805161781F50098794B /* MessageEntrySendButtonPressed@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +242,15 @@
 				2860E329111B887F00E27156 /* MainWindow_iPhone.xib in Resources */,
 				2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */,
 				D134D6E61617685C0098794B /* RootViewController.xib in Resources */,
+				D134D778161778790098794B /* ChatViewController.xib in Resources */,
+				D134D806161781F50098794B /* MessageEntryBackground.png in Resources */,
+				D134D807161781F50098794B /* MessageEntryBackground@2x.png in Resources */,
+				D134D808161781F50098794B /* MessageEntryInputField.png in Resources */,
+				D134D809161781F50098794B /* MessageEntryInputField@2x.png in Resources */,
+				D134D80A161781F50098794B /* MessageEntrySendButton.png in Resources */,
+				D134D80B161781F50098794B /* MessageEntrySendButton@2x.png in Resources */,
+				D134D80C161781F50098794B /* MessageEntrySendButtonPressed.png in Resources */,
+				D134D80D161781F50098794B /* MessageEntrySendButtonPressed@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +265,9 @@
 				2860E328111B887F00E27156 /* AppDelegate_iPhone.m in Sources */,
 				2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */,
 				D134D6E51617685C0098794B /* RootViewController.m in Sources */,
+				D134D777161778790098794B /* ChatViewController.m in Sources */,
+				D134D7D4161780390098794B /* HPGrowingTextView.m in Sources */,
+				D134D7D5161780390098794B /* HPTextViewInternal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

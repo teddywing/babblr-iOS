@@ -28,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://google-developers.appspot.com/maps/documentation/javascript/examples/map-simple"]]];
+	[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://google-developers.appspot.com/maps/documentation/javascript/examples/event-closure"]]];
 }
 
 
@@ -57,6 +57,18 @@
 - (void)dealloc {
 	[webView release];
     [super dealloc];
+}
+
+
+# pragma mark UIWebViewDelegate methods
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+	if (navigationType == UIWebViewNavigationTypeLinkClicked) {
+		// Flip and open chat view
+		NSLog(@"UIWebView item clicked");
+	}
+	
+	return YES;
 }
 
 
