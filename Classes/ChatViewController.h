@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "HPGrowingTextView.h"
+#import "ChatMessagesDataSource.h"
 
 
-@interface ChatViewController : UIViewController <HPGrowingTextViewDelegate, UITableViewDelegate, UITableViewDataSource> {
+@interface ChatViewController : UIViewController <HPGrowingTextViewDelegate, UITableViewDelegate> {
 	UITableView *chatTableView;
 	UIView *containerView;
     HPGrowingTextView *textView;

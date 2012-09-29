@@ -39,6 +39,8 @@
     self.view.backgroundColor = [UIColor colorWithRed:219.0f/255.0f green:226.0f/255.0f blue:237.0f/255.0f alpha:1];
 	
 	chatTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+	ChatMessagesDataSource *dataSource = [[ChatMessagesDataSource alloc] init];
+	[chatTableView setDataSource:dataSource];
 	[self.view addSubview:chatTableView];
 	
     containerView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 40, 320, 40)];
@@ -188,23 +190,6 @@
 
 # pragma mark UITableViewDelegate methods
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return 5;
-}
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	static NSString *CellIdentifier = @"ChatCell";
-	 
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-	if (cell == nil) {
-		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
-	}
-	 
-	// Set up the cell...
-	NSString *cellValue = @"test";
-	cell.textLabel.text = cellValue;
-	 
-	return cell;
-}
 
 @end

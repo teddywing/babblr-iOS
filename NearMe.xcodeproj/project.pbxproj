@@ -29,6 +29,7 @@
 		D134D80B161781F50098794B /* MessageEntrySendButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D134D803161781F50098794B /* MessageEntrySendButton@2x.png */; };
 		D134D80C161781F50098794B /* MessageEntrySendButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D134D804161781F50098794B /* MessageEntrySendButtonPressed.png */; };
 		D134D80D161781F50098794B /* MessageEntrySendButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D134D805161781F50098794B /* MessageEntrySendButtonPressed@2x.png */; };
+		D134D89116178EF10098794B /* ChatMessagesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D134D89016178EF10098794B /* ChatMessagesDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,8 @@
 		D134D803161781F50098794B /* MessageEntrySendButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageEntrySendButton@2x.png"; sourceTree = "<group>"; };
 		D134D804161781F50098794B /* MessageEntrySendButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MessageEntrySendButtonPressed.png; sourceTree = "<group>"; };
 		D134D805161781F50098794B /* MessageEntrySendButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageEntrySendButtonPressed@2x.png"; sourceTree = "<group>"; };
+		D134D88F16178EF10098794B /* ChatMessagesDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatMessagesDataSource.h; path = Classes/ChatMessagesDataSource.h; sourceTree = "<group>"; };
+		D134D89016178EF10098794B /* ChatMessagesDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatMessagesDataSource.m; path = Classes/ChatMessagesDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 		D134D6E8161768700098794B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D134D88F16178EF10098794B /* ChatMessagesDataSource.h */,
+				D134D89016178EF10098794B /* ChatMessagesDataSource.m */,
 				D134D774161778790098794B /* ChatViewController.h */,
 				D134D775161778790098794B /* ChatViewController.m */,
 				D134D6E21617685C0098794B /* RootViewController.h */,
@@ -268,6 +273,7 @@
 				D134D777161778790098794B /* ChatViewController.m in Sources */,
 				D134D7D4161780390098794B /* HPGrowingTextView.m in Sources */,
 				D134D7D5161780390098794B /* HPTextViewInternal.m in Sources */,
+				D134D89116178EF10098794B /* ChatMessagesDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
