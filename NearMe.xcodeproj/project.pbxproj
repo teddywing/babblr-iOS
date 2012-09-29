@@ -30,6 +30,9 @@
 		D134D80C161781F50098794B /* MessageEntrySendButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D134D804161781F50098794B /* MessageEntrySendButtonPressed.png */; };
 		D134D80D161781F50098794B /* MessageEntrySendButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D134D805161781F50098794B /* MessageEntrySendButtonPressed@2x.png */; };
 		D134D89116178EF10098794B /* ChatMessagesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D134D89016178EF10098794B /* ChatMessagesDataSource.m */; };
+		D134D8A8161790470098794B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D134D8A7161790470098794B /* CFNetwork.framework */; };
+		D134D8AA161790470098794B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D134D8A9161790470098794B /* Security.framework */; };
+		D134D8C5161793820098794B /* libUnittWebSocketClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D134D8C4161793820098794B /* libUnittWebSocketClient.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,9 @@
 		D134D805161781F50098794B /* MessageEntrySendButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageEntrySendButtonPressed@2x.png"; sourceTree = "<group>"; };
 		D134D88F16178EF10098794B /* ChatMessagesDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatMessagesDataSource.h; path = Classes/ChatMessagesDataSource.h; sourceTree = "<group>"; };
 		D134D89016178EF10098794B /* ChatMessagesDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatMessagesDataSource.m; path = Classes/ChatMessagesDataSource.m; sourceTree = "<group>"; };
+		D134D8A7161790470098794B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D134D8A9161790470098794B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D134D8C4161793820098794B /* libUnittWebSocketClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUnittWebSocketClient.a; path = "Vendor/UnittWebSocketClient/bin/Debug-iphonesimulator/libUnittWebSocketClient.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,9 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				D134D8A8161790470098794B /* CFNetwork.framework in Frameworks */,
+				D134D8AA161790470098794B /* Security.framework in Frameworks */,
+				D134D8C5161793820098794B /* libUnittWebSocketClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +139,8 @@
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				D134D6E91617687A0098794B /* xib */,
 				D134D7FD161781F50098794B /* Resources */,
+				D134D8A7161790470098794B /* CFNetwork.framework */,
+				D134D8A9161790470098794B /* Security.framework */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -146,6 +157,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D134D8C4161793820098794B /* libUnittWebSocketClient.a */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
@@ -289,7 +301,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NearMe_Prefix.pch;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "NearMe-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = NearMe;
 			};
 			name = Debug;
@@ -301,7 +316,10 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NearMe_Prefix.pch;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "NearMe-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = NearMe;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -315,7 +333,9 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Vendor/UnittWebSocketClient/include\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Vendor/UnittWebSocketClient/bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"";
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -330,7 +350,9 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Vendor/UnittWebSocketClient/include\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Vendor/UnittWebSocketClient/bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.0;

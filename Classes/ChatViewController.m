@@ -12,6 +12,7 @@
 @implementation ChatViewController
 
 @synthesize chatTableView = _chatTableView;
+@synthesize dataSource = _dataSource;
 
 -(id)init
 {
@@ -39,7 +40,8 @@
     self.view.backgroundColor = [UIColor colorWithRed:219.0f/255.0f green:226.0f/255.0f blue:237.0f/255.0f alpha:1];
 	
 	chatTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-	ChatMessagesDataSource *dataSource = [[ChatMessagesDataSource alloc] init];
+	dataSource = [[ChatMessagesDataSource alloc] init];
+	[dataSource startMyWebSocket];
 	[chatTableView setDataSource:dataSource];
 	[self.view addSubview:chatTableView];
 	
@@ -86,7 +88,7 @@
 	UIButton *doneBtn = [UIButton buttonWithType:UIButtonTypeCustom];
 	doneBtn.frame = CGRectMake(containerView.frame.size.width - 69, 8, 63, 27);
     doneBtn.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin;
-	[doneBtn setTitle:@"Done" forState:UIControlStateNormal];
+	[doneBtn setTitle:@"Post" forState:UIControlStateNormal];
     
     [doneBtn setTitleShadowColor:[UIColor colorWithWhite:0 alpha:0.4] forState:UIControlStateNormal];
     doneBtn.titleLabel.shadowOffset = CGSizeMake (0.0, -1.0);
@@ -102,6 +104,9 @@
 
 -(void)resignTextView
 {
+	[dataSource sendMessage:textView.text];
+	textView.text = @"";
+	[chatTableView reloadData];
 	[textView resignFirstResponder];
 }
 

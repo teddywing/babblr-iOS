@@ -15,9 +15,11 @@
 	UITableView *chatTableView;
 	UIView *containerView;
     HPGrowingTextView *textView;
+	ChatMessagesDataSource *dataSource;
 }
 
 @property (nonatomic, retain) UITableView *chatTableView;
+@property (nonatomic, retain) ChatMessagesDataSource *dataSource;
 
 -(void)resignTextView;
 
