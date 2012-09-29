@@ -20,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 	
     // Override point for customization after application launch.
-	RootViewController *rootVC = [[RootViewController alloc] init];
+	RootViewController *rootVC = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
 	[window setRootViewController:rootVC];
 	
     [window makeKeyAndVisible];
